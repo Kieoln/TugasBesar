@@ -98,20 +98,6 @@ li {
   padding: 55px 0 0 30px;
 }
 
-.accordion-toggle.has-content {
-  border-radius: 4px 4px 0 0;
-}
-
-.accordion-toggle:after {
-  font-family: "FontAwesome";
-  content: "\f078";
-  float: right;
-}
-
-.accordion-opened .accordion-toggle:after {
-  content: "\f054";
-}
-
 .div-spacer {
   height: 20px;
   display: block;
@@ -266,4 +252,27 @@ li {
 
 .accordion-opened .accordion-toggle:after {
   content: "\f054";
+}
+.panel-heading {
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+}
+.panel-heading > .dropdown .dropdown-toggle {
+  color: inherit;
+}
+
+.panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  color: inherit;
+}
+.panel-title > a,
+.panel-title > small,
+.panel-title > .small,
+.panel-title > small > a,
+.panel-title > .small > a {
+  color: inherit;
 }

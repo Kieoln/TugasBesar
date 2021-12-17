@@ -35,7 +35,7 @@
   text-decoration: none;
   cursor: pointer;
 }
-li {
+.modal li {
   list-style: none;
 }
 .fav:hover {
@@ -47,7 +47,7 @@ li {
 }
 .faq-list li a {
   display: block;
-  color: #333333;
+  color: black;
   text-transform: capitalize;
   text-decoration: none;
   position: relative;
@@ -62,7 +62,7 @@ li {
 }
 .faq-list li a:hover,
 .faq-list li a.active {
-  background: #c81e32;
+  background: black;
   color: #fff;
 }
 .faq-list li a:hover i,

@@ -3447,6 +3447,10 @@ textarea.form-control-lg {
   color: #212529;
   border-color: #212529;
 }
+.btn-outline-grey {
+  color: gray;
+  border-color: gray;
+}
 .btn-outline-dark:hover {
   color: #fff;
   background-color: #212529;

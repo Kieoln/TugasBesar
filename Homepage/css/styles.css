@@ -11453,3 +11453,12 @@ body {
         @media only screen and (max-width: 300px) {
           .text {font-size: 11px}
         }
+        .buttons {
+          width: 100px;
+          margin: 0 auto;
+          display: inline;}
+          
+        .action_btn {
+          width: 100px;
+          margin: 0 auto;
+          display: inline;}

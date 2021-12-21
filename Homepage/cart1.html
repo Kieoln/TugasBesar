@@ -419,10 +419,15 @@
 
             <!-- Modal content -->
             <div class="modal-content">
-            <span class="close" >&times;</span>
-            <p>You have checked out your items! Do you want to go home page?</p>
-            <a href="index.html" style="text-align: right; text-decoration: none; ">yes</a>
-            <a href="cartEmpty.html"  style="text-align: right; text-decoration: none;">no</a>
+                <span class="close" >&times;</span>
+                <p>You have checked out your items! Do you want to go home page?</p>
+                <div class="buttons">
+                    <div class="action_btn">
+                        <button name="submit" class="action_btn submit" type="submit" value="Save" onclick="myFunction()">Yes</button>
+                        <button name="submit" class="action_btn cancel" type="submit" value="Cancel" onclick="myFunction2()">No</button>
+                        <p id="saved"></p>
+                    </div>
+                </div>
             </div>
         
         </div>

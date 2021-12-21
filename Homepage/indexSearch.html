@@ -24,11 +24,11 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="Faq.html">FAQ</a></li>
                         
                     </ul>
-                    <form class="d-flex" style="padding-right: 30px;">
+                    <form class="d-flex" style="padding-right: 30px;" action="cart.html">
                         <button class="btn btn-outline-dark" type="submit">
                             <i class="bi bi-cart4"></i>
                             Cart
@@ -36,9 +36,9 @@
                         </button>
                     </form>
                     <form class="d-flex1" action="SignUp.html">
-                        <button class="btn btn-outline-dark" type="submit" >
-                            <i class="bi bi-box-arrow-in-right"></i>
-                            Login
+                        <button class="btn btn-outline-white" type="submit" >
+                            <i class="bi bi-person-circle"></i>
+                            User
                         </button>
                     </form>
                 </div>
@@ -82,18 +82,56 @@
         <!-- Section-->
         <br>
         <div class="search-container" style="float: right; padding-right: 30px;">
-            <form action="/action_page.php">
+            <form action="indexSearch.html">
               <input type="text" placeholder="Search.." name="search">
-              <button type="submit" href="indexSearch.html" class="btn btn-outline-dark"><i class="bi bi-search"></i></button>
+              <button type="submit" class="btn btn-outline-dark"><i class="bi bi-search"></i></button>
             </form>
-        </div>                
+        </div>
+        <div class="nav-item dropdown" style="width: 70px; padding-left: 70px;">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sort by</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#!">Judul Buku</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#!">Nama Pengarang</a></li>
+                <li><a class="dropdown-item" href="#!">ISBN</a></li>
+            </ul>
+        </div>
         <section class="py-5">
             <div class="container px-4 px-lg-5 mt-5">
-                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            
+                            <!-- Product image-->
+                            <img class="card-img-top" style="height: 400px ; width: 269px;" src="../Buku/dilannn91.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Dilan 1991</h5>
+                                    <h6 class="fw-bolder">Dia Adalah Dilanku</h6>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    Rp 78.000,-
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center" id="myBtn"><a class="btn btn-outline-dark mt-auto">Description </a></div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
-                            <img class="card-img-top" src="../Buku/dilannn.jpg" alt="..." />
+                            <img class="card-img-top" style="height: 400px ; width: 269px;" src="../Buku/dilannn.jpg" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
@@ -114,13 +152,38 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center" id="myBtn"><a class="btn btn-outline-dark mt-auto">Get to Cart</a></div>
+                                <div class="text-center" id="Btn1"><a class="btn btn-outline-dark mt-auto">Description</a></div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-
+                    <div class="col mb-5">
+                        <div class="card h-100">                            
+                            <!-- Product image-->
+                            <img class="card-img-top" style="height: 400px ; width: 269px;" src="../Buku/mileaaa.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Milea</h5>
+                                    <h6 class="fw-bolder">Suara Dari Dilan</h6>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    Rp 78.000,-
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center" id="Btn2"><a class="btn btn-outline-dark mt-auto">Description</a></div>
+                            </div>
+                        </div>
+                    </div>
             <!-- The Modal -->
             <div id="myModal" class="modal">
 
@@ -128,20 +191,20 @@
                 <div class="modal-content">
                 <span class="close" style="float: right;">&times;</span>
                 <li>
-                <img class="card-img-top" src="../Buku/Sampul_buku_Harry_Potter_dan_Piala_Api.jpg" alt="..." / style="margin-left:50px; height:200px; width: 150px; float: left; display:block;">
-                <h3 style=" margin-left:300px; margin-top: 50px;">Harry Potter & the Goblet of Fire</h3>
-                <button class="btn btn-outline-dark" style=" margin-left:20%; margin-top: 5%;"><i class="bi bi-cart4"></i>  Buy</button>
+                <img class="card-img-top" src="../Buku/dilannn.jpg" alt="..." / style="margin-left:50px; height:200px; width: 150px; float: left; display:block;">
+                <h3 style=" margin-left:300px; margin-top: 50px;">Dilan 1990 Dia Adalah Dilanku</h3>
+                <button class="btn btn-outline-dark" style=" margin-left:20%; margin-top: 5%; "><a href="Cart Contoh.html" style="text-decoration: none;"><i class="bi bi-cart4" ></i>  Buy</a></button>
                 <h3 style="float: right; display: block; margin-right:30%; margin-top: 5%;"><i class="bi bi-heart-fill fav" onclick="myFunction(this, 'red')"></i></h3>
                 </li>
                 <br>
-                <li><p style="float: left; display: block;">Pengarang : J.K Rowling</p>
+                <li><p style="float: left; display: block;">Pengarang : Pidi Baiq</p>
                     <p style="float: right;">Tanggal terbit:</p> 
                 </li>
-                <li><p style="float: left; display: block;">ISBN          : 9786020342726</p>
-                    <p style="float: right;">22 Mei 2017</p>
+                <li><p style="float: left; display: block;">ISBN          : 9786027870994</p>
+                    <p style="float: right;">Jakarta, 2014</p>
                 </li>
                 <h4>Sinopsis</h4>
-                <p>Seri keempat Harry Potter ini bercerita tentang kisah Harry berusia 13 tahun dalam turnamen Triwizards yang seharusnya hanya boleh diikuti oleh siswa berusia 17 tahun. Turnamen itu hanya diikuti oleh tiga orang dari 3 sekolah sihir, yaitu Durmstrang, Beauxbatons, dan Hogwarts yang masing-masing diwakili oleh Victor Krum, Fleur Delacour, dan Cedric Diggory.</p>
+                <p>"Milea kamu cantik, tapi aku belum mencintaimu. Enggak tahu kalau sore. Tunggu aja." (Dilan 1990) "Milea jangan pernah bilang ke aku ada yang menyakitimu., nanti besoknya, orang itu akan hilang." (Dilan 1990) "Cinta sejati adalah kenyamanan, kepercayaan, dan dukungan. Kalau kamu tidak setuju, aku tidak peduli. " (Milea 1990)</p>
                 </div>
             
             </div>

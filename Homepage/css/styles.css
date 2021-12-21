@@ -3447,6 +3447,12 @@ textarea.form-control-lg {
   color: #212529;
   border-color: #212529;
 }
+.btn-outline-red {
+  color: black;
+  background-color: white;
+  border-color: #212529;
+  
+}
 .btn-outline-white {
   color: white;
   background-color: #000;
@@ -3459,6 +3465,11 @@ textarea.form-control-lg {
   color: #fff;
   background-color: #212529;
   border-color: #212529;
+}
+.btn-outline-red:hover{
+  color: white;
+  background-color: red;
+  border-color: white;
 }
 .btn-outline-white:hover {
   color: black;

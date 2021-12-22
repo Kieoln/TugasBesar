@@ -5,6 +5,30 @@
 	<title></title>
 	<link rel="stylesheet" href="css/styleSignUp.css">
     <link href="css/modal.css" rel="stylesheet" />
+    <style>
+        .btn-outline-dark {
+            color: #212529;
+            border: 1px #212529;
+        }
+        .btn-outline-dark:hover {
+            color: #fff;
+            background-color: #212529;
+            border-color: #212529;
+        }
+        .btn {
+            transition: none;
+        }
+        .btn:hover {
+            color: #fff;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+        a:hover{
+            color: inherit
+        }
+    </style>
 </head>
 <body>
 	<br>
@@ -68,9 +92,10 @@
         <p style="text-align: center;">
             Wrong password! Please Try again.
         </p>
-        <div class="btn-group">
+        <br>
+        <div class="btn-group" >
             <span class="close"></span>
-            <button><a href="SignUp.html">Try again</a></button>
+            <button class="btn btn-outline-dark" style="border: 1px solid;"><a href="SignUp.html">Try again</a></button>
         </div>
     </div>
 

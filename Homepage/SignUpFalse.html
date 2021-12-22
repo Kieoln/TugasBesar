@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="css/styleSignUp.css">
+    <link href="css/modal.css" rel="stylesheet" />
+</head>
+<body>
+	<br>
+<br>
+    <div class="cont">
+        <div class="form sign-in" action="">
+            <h2>Welcome</h2>
+            <label>
+                <span>Email</span>
+                <input type="email" required>
+            </label>
+            <label>
+                <span>Password</span>
+                <input type="password" required>
+            </label>
+            <p class="forgot-pass">Forgot password?</p>
+            <div id="myBtn">
+                <button type="button" class="submit"  >Sign In</button>
+            </div>
+         
+        </div>
+        <div class="sub-cont">
+            <div class="img">
+                <div class="img__text m--up">
+                 
+                    <h3>Don't have an account? Please Sign up!<h3>
+                </div>
+                <div class="img__text m--in">
+                
+                    <h3>If you already has an account, just sign in.<h3>
+                </div>
+                <div class="img__btn" href>
+                    <span class="m--up">Sign Up</span>
+                    <span class="m--in">Sign In</span>
+                </div>
+            </div>
+            <div class="form sign-up">
+                <h2>Create your Account</h2>
+                <label>
+                    <span>Name</span>
+                    <input type="text" />
+                </label>
+                <label>
+                    <span>Email</span>
+                    <input type="email" />
+                </label>
+                <label>
+                    <span>Password</span>
+                    <input type="password" />
+                </label>
+                <button type="button" class="submit"><a href="indexLogin.html">Sign Up</a></button>
+                
+            </div>
+        </div>
+    </div>
+ <!-- The Modal -->
+ <div id="myModal" class="modal"style="padding: 15px;">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <p style="text-align: center;">
+            Wrong password! Please Try again.
+        </p>
+        <div class="btn-group">
+            <span class="close"></span>
+            <button><a href="SignUp.html">Try again</a></button>
+        </div>
+    </div>
+
+</div>
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+    <script>
+        document.querySelector('.img__btn').addEventListener('click', function() {
+            document.querySelector('.cont').classList.toggle('s--signup');
+        });
+    </script>
+</body>
+</html>
